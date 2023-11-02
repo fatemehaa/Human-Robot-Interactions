@@ -71,8 +71,7 @@ fligner.test(data=new, NumExhibits ~ Condition)
 
 kruskal_lt <- kruskal_test(data=df, ListenedTime ~ Condition)
 kruskal_lp <- kruskal_test(data=df, ListenedPercentage ~ Condition)
-#kruskal_ne <- 
-  kruskal_test(data=new, NumExhibits ~ Condition)
+kruskal_ne <- kruskal_test(data=new, NumExhibits ~ Condition)
 
 
 dunn_lt <- dunnTest(data=df, ListenedTime ~ Condition, method='bonferroni')
@@ -83,23 +82,23 @@ dunn_ne <- dunnTest(data=new, NumExhibits ~ Condition, method='bonferroni')
 kruskal_lt
 
 par(bg = 'white')
-#boxplot_lt <-
+boxplot_lt <-
   ggplot(df, aes(x=Condition, y=ListenedTime)) +
     geom_boxplot(fill=c('#a22c29','#3066be','#e18335'), colour='black') +
     scale_x_discrete() + scale_y_continuous(breaks = pretty( c(0,70) , n = 7) ) +
     theme_bw() +
-    #labs(subtitle=get_test_label(kruskal_lt, detailed = TRUE)) +
+    labs(subtitle=get_test_label(kruskal_lt, detailed = TRUE)) +
     xlab('Conditions') + ylab('Listened Time (s)') 
 
-#boxplot_lp <-
+boxplot_lp <-
   ggplot(df, aes(x=Condition, y=ListenedPercentage)) +
     geom_boxplot(fill=c('#a22c29','#3066be','#e18335'), colour='black') +
     scale_x_discrete() + scale_y_continuous(breaks = pretty( c(0,100) , n = 10) ) +
     theme_bw() +
-    #labs(subtitle=get_test_label(kruskal_lp, detailed = TRUE)) +
+    labs(subtitle=get_test_label(kruskal_lp, detailed = TRUE)) +
     xlab('Conditions') + ylab('Listened Percentage (%)')
 
-#boxplot_ne <-
+boxplot_ne <-
   ggplot(new, aes(x=Condition, y=NumExhibits)) +
     geom_boxplot(fill=c('#a22c29','#3066be','#e18335'), colour='black') +
     scale_x_discrete() + scale_y_continuous(breaks = pretty( c(0,10) , n = 10) ) +
@@ -134,23 +133,23 @@ summary_ne <- group_by(new, Condition) %>%
     InterquartileRange = IQR(NumExhibits, na.rm = TRUE)
   )
 
-#barplot_lt <-
+barplot_lt <-
   ggplot(summary_lt, aes(x=Condition, y=Mean)) +
     geom_bar(fill=c('#a22c29','#3066be','#e18335'), stat = "identity") +
     scale_x_discrete() + scale_y_continuous(breaks = pretty( c(0,70) , n = 7) ) + 
     theme_bw() +
-    #labs(subtitle=get_test_label(kruskal_ne, detailed = TRUE)) +
+    labs(subtitle=get_test_label(kruskal_ne, detailed = TRUE)) +
     xlab('Conditions') + ylab('Listened Time (s)')
 
-#barplot_lp <-  
+barplot_lp <-  
   ggplot(summary_lp, aes(x=Condition, y=Mean)) +
     geom_bar(fill=c('#a22c29','#3066be','#e18335'), stat = "identity") +
     scale_x_discrete() + scale_y_continuous(breaks = pretty( c(0,100) , n = 10) ) +
     theme_bw() +
-    #labs(subtitle=get_test_label(kruskal_ne, detailed = TRUE)) +
+    labs(subtitle=get_test_label(kruskal_ne, detailed = TRUE)) +
     xlab('Conditions') + ylab('Listened Percentage (%)')
   
-#barplot_ne <-
+barplot_ne <-
   ggplot(summary_ne, aes(x=Condition, y=Mean)) +
     geom_bar(fill=c('#a22c29','#3066be','#e18335'), stat = "identity") +
     scale_x_discrete() + scale_y_continuous(breaks = pretty( c(0,10) , n = 10) ) +
