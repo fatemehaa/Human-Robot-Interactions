@@ -1,10 +1,10 @@
 #### Human-Robot Interactions project
 ## How different degrees of control affect human-robot interaction with a robot tour guide in VR
 
-In this project, we designed a robot in virtual reality to play the role of a museum tour guide. Three participant groups were defined with various degrees of control over the robot's explanations of museum exhibits: full control; partial control; and no control. We evaluated the agency, impression, and satisfaction of their experience with the robot and their level of control over it. Participants' interactions with the robot and exhibits in VR were recorded in _.json_ files, and the participants filled out questionnaires regarding their experience after the experiment. Overall, the results showed that participants with full control over the robot had the highest engagement levels, while the no control group had the lowest number of initial interactions. While the full control group experienced higher levels of agency, the partial and no control groups perceived the robot more positively.
+In this project, we designed a robot in virtual reality to play the role of a museum tour guide. Three participant groups were defined with various degrees of control over the robot's explanations of museum exhibits: full-control; partial-control; and no-control. We evaluated the agency, impression, and satisfaction of their experience with the robot and their level of control over it. Participants' interactions with the robot and exhibits in VR were recorded in _.json_ files, and the participants filled out questionnaires regarding their experience after the experiment. Overall, the results showed that participants with full-control over the robot had the highest engagement levels, while the no-control group had the lowest number of initial interactions. While the full-control group experienced higher levels of agency, the partial and no-control groups perceived the robot more positively.
 
 
-**My contributions in the project:**
+**My contributions to the project:**
 - Helping to develop the overall experimental design of the project
 - Creating elements of the exhibits of the virtual museum using Unity
 - Conducting the experiment and collecting measurements from the participants while in VR
@@ -14,5 +14,4 @@ In this project, we designed a robot in virtual reality to play the role of a mu
 
 Sample video of the robot in the virtual museum: https://www.youtube.com/watch?v=oVnbYewUtsk
 
-The robot in the virtual museum:
 ![image](https://github.com/fatemehaa/Human-Robot-Interactions/assets/50797701/38d87b86-655b-456f-9013-ab913f976d6d)
