@@ -1,2 +1,4 @@
-### Human-Robot Interactions project
+#### Human-Robot Interactions project
 ## How different degrees of control affect human-robot interaction with a robot tour guide in VR
+
+In this project, we designed a robot in virtual reality to play the role of a museum tour guide. Three participant groups were defined with various degrees of control over the robot's explanations of museum exhibits: full control; partial control; and no control. We evaluated the agency, impression, and satisfaction of their experience with the robot and their level of control. Data was recorded in the VR environment regarding the participants' interaction with the robot and exhibits, as well as questionnaire data gathered after the experiment. The quantitative data was collected in the form of _.json_ files and I prepared, cleaned, and visualised them using python, and conducted statistical analysis using R.
