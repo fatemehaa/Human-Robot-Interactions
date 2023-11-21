@@ -12,4 +12,4 @@ In this project, we designed a robot in virtual reality to play the role of a mu
 - Conducting statistical analysis on the quantitative data using R
 - Helping to draw the overall conclusions of the experiment and reporting it in the final project report
 
-![image](https://github.com/fatemehaa/Human-Robot-Interactions/assets/50797701/38d87b86-655b-456f-9013-ab913f976d6d)
+![image](https://github.com/fatemehaa/Human-Robot-Interactions/assets/50797701/8bdeb944-e8b2-4a37-b244-c42ad921984b)
